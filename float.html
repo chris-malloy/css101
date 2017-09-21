@@ -1,0 +1,81 @@
+<!-- FLOAT PROPERTY -->
+<!-- Float was originally used to wrap text around a photo -->
+<!-- There are several float properties -->
+<!-- None is default -->
+<!-- Left floats it left until runs into another floated element or wall -->
+<!-- Right is opposite of left -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float - Makes no Sense</title>
+    <style type="text/css" media="screen">
+        #container {
+            float: left;
+            border: 2px solid black;
+            background-color: lightgreen;
+            /* use overflow: hidden will literally hide any element that is spilling out of it's container */
+            overflow: hidden;
+            /* overflow: scroll will allow to scroll to see what is spilling over */
+            width: 80%;
+            margin: auto;
+        }
+        
+        .left {
+            float: left;
+            width: 40%;
+            background-color: lightblue;
+        }
+        
+        .right {
+            float: right;
+            width: 10%;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- FLOAT 
+    1. A block level element no longer takes up the whole page. It's not inline, it's not inline-block, it's not block... it's not even display.  i.e., margin will not be added;
+    2. The element will go as far left as it can until is runs into something else floating in that direction. 
+    3. Floated elements are in their own universe. They don't pass their height up to their parents, unless their parents are also floating. You will get odd behaviour when static elements run into floated elements.
+    3b. To force height up....
+        1. Set the parent to float 
+        2. overflow: hidden-->
+
+    <div id="container">
+        <div class="left">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div class="left">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div class="left">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div class="right">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div class="right">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+        <div class="right">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+            in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
+    </div>
+
+</body>
+
+</html>
