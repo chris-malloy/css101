@@ -1,0 +1,62 @@
+#google-wrapper {
+    text-align: center;
+    height: 100vh;
+    position: relative;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+#header {
+    display: block;
+}
+
+ol {
+    text-align: right;
+}
+
+
+/* .menu {
+    display: inline-block;
+} */
+
+.menu-item {
+    display: inline-block;
+}
+
+#content {
+    display: block;
+    position: relative;
+    margin: auto;
+    margin-top: 200px;
+}
+
+#footer {
+    display: block;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 31%
+}
+
+.footer-left {
+    display: inline;
+    position: relative;
+    /* width: 50%; */
+    float: left;
+    /* margin-right: */
+}
+
+.footer-right {
+    display: inline;
+    position: absolute;
+    width: 50%;
+    float: right;
+    margin-left: 0px;
+}
+
+.footer-menu {
+    display: inline-block;
+}
