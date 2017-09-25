@@ -1,0 +1,107 @@
+<!-- media query types 
+
+screen - most common, for telling the screen how to display < pretty muhc all you will use
+
+print - for changing layout when printing off a page -->
+
+<!-- You will generally disign for three types > Phone, Tablet, Desktop IN THAT ORDER -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>@Media Queries</title>
+    <link type="text/css" rel="stylesheet" href="media-query-notes.css">
+
+    <style type="text/css" media="screen">
+        /* #the-box {
+            background-color: red;
+            height: 300px;
+            width: 300px;
+        }
+        
+        @media screen and (max-width: 1000px) {
+            #the-box {
+                background-color: blue;
+            }
+        } */
+        
+        #container {
+            position: relative;
+        }
+        
+        #top-menu {
+            background-color: purple;
+            width: 100%;
+            height: 200px;
+        }
+        
+        #left-menu li.menu-item {
+            height: 100px;
+            background-color: blue;
+            margin-top: 10px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            #left-menu {
+                float: left;
+                width: 20%;
+            }
+        }
+        
+        #super-menu {
+            height: 200px;
+            background-color: blue;
+        }
+        
+        #content {
+            height: 500px;
+        }
+        
+        .pin-to-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        @media screen and (max-width: 768px) {
+            #super-menu {}
+        }
+        
+        #footer {
+            margin-top: 10px;
+            height: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="the-box">
+    </div> -->
+
+    <div class="container">
+        <div id="top-menu"></div>
+        <div id="left-menu">
+            <ul>
+                <li class="menu-item"></li>
+                <li class="menu-item"></li>
+                <li class="menu-item"></li>
+                <li class="menu-item"></li>
+            </ul>
+        </div>
+        <div id="content"></div>
+
+        <div id="super-menu"></div>
+
+        <div class="pin-to-bottom">
+            <div id="footer"></div>
+        </div>
+    </div>
+</body>
+
+</html>
